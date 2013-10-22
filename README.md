@@ -3,6 +3,8 @@ c-sharp-statistics-library
 
 A Simple C# Statistics Library
 
+I built this library originally to assist in statistical analysis of market trends in the game Eve Online. I originally posted this library on SourceForge (https://sourceforge.net/projects/cstatisticslibr/) including a DLL package. I am migrating it to GitHub in order to leverage GitHub's better update infrastructure as well as keep all of my other projects in one place.
+
 #### Analyzer
 This class contains basic Statistics functionality. It takes an array of values (int, float, double) and performs analysis on that array.
 
