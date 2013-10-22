@@ -32,11 +32,15 @@ namespace StatisticsLibrary
         /// two centermost values.
         /// </summary>
         /// <returns>Returns the median of the array.</returns>
-        public double Median()
+       public double Median()
         {
-            int med = m_Values.Length / 2;
-
-            return Convert.ToDouble(m_Values[med]);
+        	int med = m_Values.Length / 2;
+        	if(m_Values.Length%2)
+        	{
+        		return (Convert.ToDouble(m_Values[med])+Convert.ToDouble(m_Values[med+1]))/2;
+        	}
+        
+        	return Convert.ToDouble(m_Values[med]);
         }
 
         /// <summary>
