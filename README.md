@@ -62,14 +62,14 @@ This class contains basic Statistics functionality. It takes an array of values 
 *SampleKurtosis*
 > Returns the kurtosis of the sample dataset.
 
-***Helper Methods
+###Helper Methods
 *SumOf(params Funct<double, double>[] fns)*
 > Returns the aggregated sum of values after being passed to the provided function callbacks. Useful for generating a sum of the difference of squares for the variance formulas.
 
 *MedianWith(IEnumerable<T> items)*
 > Returns the median of a subset of items.
 
-***Additional information
+###Additional information
 
 **Skewness**
 Skewness is the ratio of the third moment of the mean (sum of difference of cubes) and the standard deviation.
