@@ -74,5 +74,5 @@ This class contains basic Statistics functionality. It takes an array of values 
 **Skewness**
 Skewness is the ratio of the third moment of the mean (sum of difference of cubes) and the standard deviation.
 
-***Kurtosis**
+**Kurtosis**
 Kurtosis is the ratio of the fourth moment of the mean (sum of difference of fourths) and the second moment of the mean (sum of difference of squares).
