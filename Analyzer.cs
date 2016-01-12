@@ -54,28 +54,10 @@ namespace StatisticsLibrary
         /// <returns>Returns the mode of the array.</returns>
         public double Mode()
         {
-            double ret = 0;
-
-            Dictionary<T, int> values = new Dictionary<T, int>();
-
-            foreach (T element in m_Values)
-            {
-                int c;
-                values.TryGetValue(element, out c);
-
-                values[element] = ++c;
-            }
-
-            int max = 0;
-            foreach (KeyValuePair<T, int> value in values)
-            {
-                if (value.Value > max)
-                {
-                    ret = Convert.ToDouble(value.Key);
-                    max = value.Value;
-                }
-            }
-            return ret;
+            return m_Values.GroupBy(i => i)
+                .OrderBy(i => i.Count())
+                .Select(g => g.Key)
+                .First();
         }
 
         /// <summary>
